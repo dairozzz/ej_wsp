@@ -8,11 +8,11 @@
     max-width: 450px;
     margin: 40px auto;
     background-color: rgb(25, 116, 25);
-    height: 90vh;
+    height: 700px;
     border: solid 3px black;
     border-radius: 20px;
     overflow-y: auto;
-    position: sticky;
+    
 }
 
 .header{
@@ -61,6 +61,7 @@
     flex-direction: column;
     list-style: none;
     height: 80vh;
+    position: sticky;
 }
 
 .chat{
@@ -120,19 +121,20 @@
     justify-content: center;
 }
 
-.contactos__boton{
-    position: fixed;
+.contactos__boton {
+    position: sticky;
     bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
     background-color: rgb(36, 139, 36);
-    border-radius: 20%;
+    border-radius: 50%;
     padding: 10px;
-    margin-left: 170px;
-    margin-bottom: 40px;
     color: white;
     text-decoration: none;
     font-size: 20px;
     display: flex;
-    align-items: center;    
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    margin-left: 360px;
 }
