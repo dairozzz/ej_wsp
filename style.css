@@ -11,9 +11,7 @@
     height: 700px;
     border: solid 3px black;
     border-radius: 20px;
-    position: relative; /* Añadido para que los elementos posicionados dentro lo tomen como referencia */
-
-    
+    position: relative; 
 }
 
 .header{
@@ -120,6 +118,7 @@
     width: 20px;
     height: 20px;
     justify-content: center;
+    align-items: center;
 }
 
 .contactos__boton {
@@ -137,9 +136,15 @@
     height: 50px;
     margin-left: 360px;
     margin-top: 300px;
-    bottom: 20px; /* Posicionado cerca del fondo */
+    bottom: 20px;
     z-index: 10;
 
 }
 
+.hora__verde{
+    color: rgb(36, 139, 36);
+}
 
+.ultimo_mensaje--verde{
+    color: rgb(36, 139, 36);
+}
