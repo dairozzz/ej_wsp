@@ -68,7 +68,10 @@
     padding: 10px;
     display: flex;
     align-items: center;
+    cursor: pointer;
+
 }
+
 
 .chats__bloques{
     display: flex;
@@ -76,6 +79,11 @@
     background-color: white;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.chat:hover,
+.chat:hover .chats__bloques {
+    background-color: #f5f5f5;
 }
 
 .foto{
@@ -147,4 +155,98 @@
 
 .ultimo_mensaje--verde{
     color: rgb(36, 139, 36);
+}
+
+
+
+.estados{
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+
+.estados__tab{
+    display: flex;
+    width: 100%;
+    background-color: white;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.tab {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 20px;
+    transition: opacity 0.5s; 
+    opacity: 0; 
+  }
+
+.estados-list, .llamadas-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.estados-item, .llamadas-item {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.estados-img, .llamadas-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.estados-info, .llamadas-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.estados-name, .llamadas-name {
+    font-weight: bold;
+}
+
+.estados-text, .llamadas-time {
+    color: #666;
+}
+
+.estados-tab {
+    display: none;
+}
+
+.llamadas-tab {
+    display: none;
+}
+
+.estados-tab:target {
+    display: block;
+}
+
+.llamadas-tab:target {
+    display: block;
+}
+
+.chats {
+    display: block;
+}
+
+.chats:target {
+    display: block;
+}
+
+.estados-tab, .llamadas-tab {
+    display: none;
+}
+
+:target {
+    display: block;
 }
